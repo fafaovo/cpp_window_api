@@ -1,0 +1,13 @@
+﻿生成启动时间为 2021/5/24 21:22:07。
+     1>项目“F:\Class\Window_api\3\对话框\对话框\对话框.vcxproj”在节点 2 上(Build 个目标)。
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\对话框.res" "对话框.rc" 
+       Link:
+         D:\Visio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Class\Window_api\3\对话框\Debug\对话框.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Class\Window_api\3\对话框\Debug\对话框.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Class\Window_api\3\对话框\Debug\对话框.lib" /MACHINE:X86 "Debug\对话框.res"
+         Debug\login.obj
+         对话框.vcxproj -> F:\Class\Window_api\3\对话框\Debug\对话框.exe
+     1>已完成生成项目“F:\Class\Window_api\3\对话框\对话框\对话框.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.36

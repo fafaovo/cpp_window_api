@@ -33,4 +33,9 @@ protected:
 //自己定义的
 public:
 	int m_Time;
+	//函数定义
+	afx_msg void OnBnClickedButton1();
+	afx_msg void OnRButtonUp(UINT nFlags, CPoint point);
+	virtual void OnCancel();
+	afx_msg void OnLButtonDblClk(UINT nFlags, CPoint point);
 };

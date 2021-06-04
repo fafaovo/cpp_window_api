@@ -67,6 +67,10 @@ BEGIN_MESSAGE_MAP(CMy26DigFirstDlg, CDialog)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	//消息处理
+	ON_BN_CLICKED(IDC_BUTTON1, &CMy26DigFirstDlg::OnBnClickedButton1)
+	ON_WM_RBUTTONUP()
+	ON_WM_LBUTTONDBLCLK()
 END_MESSAGE_MAP()
 
 
@@ -155,3 +159,47 @@ HCURSOR CMy26DigFirstDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+//函数重载
+
+
+void CMy26DigFirstDlg::OnBnClickedButton1()
+{
+	// TODO:  在此添加控件通知处理程序代码
+	MessageBox(_T("123"));
+}
+
+
+void CMy26DigFirstDlg::OnRButtonUp(UINT nFlags, CPoint point)
+{
+	// TODO:  在此添加消息处理程序代码和/或调用默认值
+	MessageBox(_T("鼠标右键抬起事件触发"));
+	CDialog::OnRButtonUp(nFlags, point);
+}
+
+
+void CMy26DigFirstDlg::OnCancel()
+{
+	// TODO:  在此添加专用代码和/或调用基类
+	int result = MessageBox(_T("确认关闭吗"),NULL,MB_OKCANCEL);
+	if (result == 1)
+	{
+		CDialog::OnCancel();
+	}
+	else
+	{
+		return;
+	}
+	
+}
+
+
+
+
+
+void CMy26DigFirstDlg::OnLButtonDblClk(UINT nFlags, CPoint point)
+{
+	// TODO:  在此添加消息处理程序代码和/或调用默认值
+	MessageBox(_T("鼠标左键双击事件触发！"));
+	CDialog::OnLButtonDblClk(nFlags, point);
+}

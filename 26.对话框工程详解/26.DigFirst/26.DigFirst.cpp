@@ -88,3 +88,12 @@ BOOL CMy26DigFirstApp::InitInstance()
 	return FALSE;
 }
 
+
+
+int CMy26DigFirstApp::ExitInstance()
+{
+	// TODO:  在此添加专用代码和/或调用基类
+	// 对话框退出之后，线程退出之前会被调用
+	MessageBox(NULL,_T("线程退出"),_T("tip"),MB_OK);
+	return CWinApp::ExitInstance();
+}
